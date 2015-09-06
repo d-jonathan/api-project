@@ -1,0 +1,51 @@
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#query {
+	min-width: 250px;
+	margin-bottom: 0.9em;
+	min-height: 35px;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.glyphicon-info-sign {
+	font-size: 1.4em;
+}
+
+.footer > p {
+	font-size: 1em;
+	margin-top: 2em;
+}
+
+.footer, #article-list, .article {
+	text-align: center;
+}
+
+.jumbotron {
+	background-image: url(../img/coffee-paper.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.form-group {
+	max-width: 300px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+	#query {
+		min-width: 200px;
+		margin-bottom: 0.9em;
+		min-height: 25px;
+		text-align: center;
+		font-size: 1em;
+	}
+}
+
+
+
+
+
