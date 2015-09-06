@@ -1,6 +1,11 @@
+body {
+	font-family: 'Playfair Display', serif;
+}
+
 .container-fluid {
 	padding-left: 0;
 	padding-right: 0;
+	background-color: #EAE7E0;
 }
 
 #query {
@@ -17,11 +22,37 @@
 
 .footer > p {
 	font-size: 1em;
-	margin-top: 2em;
 }
 
 .footer, #article-list, .article {
 	text-align: center;
+}
+
+.search {
+	display: none;
+}
+
+
+.footer {
+	background-color: #151E26;
+	padding-top: 0.9em;
+	margin-top: 2em;
+	color: #F0E7D9;
+}
+
+a:link {
+	text-decoration: none;
+	color: #1C76B9;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #1C76B9;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #2CA5FF;
 }
 
 .jumbotron {
@@ -43,6 +74,21 @@
 		text-align: center;
 		font-size: 1em;
 	}
+
+	.form-group {
+		max-width: 300px;
+		text-align: left;
+		margin-left: 20px;
+	}
+
+	.form-group > div {
+		margin-left: 50px;
+	}
+
+	.jumbotron h1 {
+		margin-left: 20px;
+	}
+
 }
 
 
