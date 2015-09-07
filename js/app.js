@@ -13,7 +13,9 @@ $(document).ready( function() {
 		e.preventDefault();
 		var query=$('#query').val();
 		$('#article-list').empty();
-		$('#query').empty();
+		$('#query').val("");
+		$('.search').show();
+		$('#query-text').text(query);
 		getData(query);
 	});
 
@@ -45,11 +47,22 @@ function displayArticle(articleData) {
 function getData (query) {
 	
 	$.getJSON('https://access.alchemyapi.com/calls/data/GetNews?outputMode=json&start=now-1d&end=now&count=12&q.enriched.url.enrichedTitle.keywords.keyword.text='+query+'&return=enriched.url.url,enriched.url.title,enriched.url.text&apikey=d728a6e44887606acf25b66f03b1fe4df3a59437', function(data){
+    	
+    	if (data.status=="OK") {
+
+
     	console.log(data);
     	var articleData = data.result.docs;
 		for (i=0; i<articleData.length; i++) {
 			displayArticle(articleData[i]);
 		};
+
+		}
+
+		else {
+			var error = data.statusInfo;
+			alert('The application was unable to retrieve data from the server because: '+data.statusInfo+'. Please try again later.');
+		}
   	});
 }
 

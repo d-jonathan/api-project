@@ -21,6 +21,10 @@ body {
 	margin-right: 5px;
 }
 
+#query-text {
+	color: #1C76B9;
+}
+
 .glyphicon-info-sign {
 	font-size: 1.4em;
 }
