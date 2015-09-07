@@ -1,13 +1,10 @@
 //API key: d728a6e44887606acf25b66f03b1fe4df3a59437
 
-var query = "election"
 
 $(document).ready( function() {
 
 	
 	//https://access.alchemyapi.com/calls/data/GetNews?outputMode=json&start=now-1d&end=now&count=12&q.enriched.url.enrichedTitle.keywords.keyword.text=election&return=enriched.url.url,enriched.url.title,enriched.url.text&apikey=d728a6e44887606acf25b66f03b1fe4df3a59437
-
-	getData(query);
 
 	$('#explore').submit(function(e) {
 		e.preventDefault();
