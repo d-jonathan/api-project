@@ -17,19 +17,19 @@
 <div class="container-fluid">
 		<div class="jumbotron text-left">
 			<h1>Explore the news</h1>
-			<div class="form-group">
-				<input type="text" class="from-control" id="query" placeholder="What intrigues you?">
+			<form class="form-group" id="explore">
+				<input type="text" id="query" placeholder="What intrigues you?">
 				<span class="glyphicon glyphicon-info-sign" data-toggle="modal" data-target="#myModal"></span>
 				<div>
-					<button type="button" class="btn btn-primary btn-large">Explore</button>
+					<input type="submit" class="btn btn-primary btn-large" name="Explore" id="submit">
 				</div>
-			</div>
+			</form>
 		</div>
 		<div class="row search text-center">	
 			<p>You searched for <span id="query-text"></span></p>			
 		</div>
 		<div class="row" id="article-list">
-			<div class="col-md-2 col-sm-3 article">
+			<div class="col-md-3 col-sm-4 article">
 				<h3><a href="" target="_blank"></a></h3>
 				<p></p>
 			</div>
@@ -49,6 +49,7 @@
           <h4 class="modal-title">About this app</h4>
         </div>
         <div class="modal-body">
+          <p>Powered by <img src="http://www.alchemyapi.com/sites/default/files/Logo60Height.png" alt="alchemyAPI logo"></p>
           <p>This app uses <a href="http://www.alchemyapi.com" target="_blank">AlchemyAPI</a> to search for ....</p>
         </div>
         <div class="modal-footer">

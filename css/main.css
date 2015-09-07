@@ -16,6 +16,11 @@ body {
 	font-size: 1.4em;
 }
 
+#article-list {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
 .glyphicon-info-sign {
 	font-size: 1.4em;
 }
